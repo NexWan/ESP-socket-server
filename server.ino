@@ -90,13 +90,13 @@ void simulateGpsMovement(char direction, float distance, float speed)
     coords.setLon(coords.getLon() - distanceInDegreesLon);
   }
 
-  notifyClients("Lat: " + String(coords.getLat()) + " Lon: " + String(coords.getLon()));
+  notifyClients("Lat: " + String(coords.getLat(), 6) + " Lon: " + String(coords.getLon(), 6));
 }
 
 void goToCoords(float lat, float lon)
 {
   coords.setCoords(lat, lon);
-  notifyClients("Lat: " + String(coords.getLat()) + " Lon: " + String(coords.getLon()));
+  notifyClients("Lat: " + String(coords.getLat(), 6) + " Lon: " + String(coords.getLon(), 6));
 }
 
 void setup()
