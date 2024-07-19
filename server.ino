@@ -6,8 +6,8 @@
 #define LAT 25.4417045590472
 #define LON -100.99283456311456
 
-***REMOVED***
-***REMOVED***
+const char *SSID = "SSID";
+const char *PASSWORD = "PWD";
 
 AsyncWebServer server(80);
 AsyncWebSocket ws("/ws");
