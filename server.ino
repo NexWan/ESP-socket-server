@@ -3,6 +3,7 @@
 #include <ESPAsyncWebServer.h>
 #include "Coords.h"
 
+// Just put whatever coordinates you want to start with
 #define LAT 25.4417045590472
 #define LON -100.99283456311456
 
